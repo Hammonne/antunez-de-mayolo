@@ -22,6 +22,10 @@
   .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 24px; align-items: start; }
   .pair figure { margin: 0; }
   .pair img { border: 1px solid #e5e5e5; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; }
+  .ba { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 12px auto; max-width: 420px; }
+  .ba figure { margin: 0; }
+  .ba img { border: 1px solid #e5e5e5; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  .ba figcaption { font-size: 12px; margin-top: 5px; }
   ul, ol { padding-left: 20px; margin: 0 0 14px; }
   li { margin-bottom: 6px; }
   dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0; }
@@ -75,7 +79,20 @@
   <h2>Proceso y técnicas</h2>
 
   <h3>Fotografías de archivo</h3>
-  <p>Las imágenes de las centrales hidroeléctricas y de la pizarra son fotografías reales de archivo encontradas en internet. Cada una fue intervenida con un color plano (en tonos verde, azul y rojo) para que funcionen como documentos de archivo y dialoguen con los retratos sin competir con ellos.</p>
+  <p>Las imágenes de las centrales hidroeléctricas y de la pizarra son fotografías reales de archivo encontradas en internet. Cada una fue intervenida con un filtro de color plano y ajustes de transparencia para que funcionen como documentos de archivo y dialoguen con los retratos sin competir con ellos.</p>
+
+  <div class="ba">
+    <figure><img src="img/archivo/canon-pato-original.jpg" alt="Fotografía original de la central hidroeléctrica del Cañón del Pato" loading="lazy"><figcaption>Cañón del Pato — original</figcaption></figure>
+    <figure><img src="img/archivo/canon-pato-color.jpg" alt="Central del Cañón del Pato intervenida con color" loading="lazy"><figcaption>Intervenida con color</figcaption></figure>
+  </div>
+  <div class="ba">
+    <figure><img src="img/archivo/mantaro-original.jpg" alt="Fotografía original de la central hidroeléctrica del Mantaro" loading="lazy"><figcaption>Mantaro — original</figcaption></figure>
+    <figure><img src="img/archivo/mantaro-color.jpg" alt="Central del Mantaro intervenida con color" loading="lazy"><figcaption>Intervenida con color</figcaption></figure>
+  </div>
+  <div class="ba">
+    <figure><img src="img/archivo/pizarra-original.jpg" alt="Fotografía original de la pizarra con la estructura de la materia" loading="lazy"><figcaption>Pizarra — original</figcaption></figure>
+    <figure><img src="img/archivo/pizarra-color.jpg" alt="Pizarra intervenida con color" loading="lazy"><figcaption>Intervenida con color</figcaption></figure>
+  </div>
 
   <h3>Caligrama en SVG</h3>
   <p>El retrato caligráfico fue construido con programación en SVG, un formato vectorial que no pierde calidad al imprimirse en gran tamaño. Está formado por más de 21 000 caracteres de una tipografía manuscrita, cada uno convertido en un trazo vectorial. El texto recorre la silueta y adopta ocho niveles de tono, variando su opacidad y grosor según las luces y sombras de la fotografía original. Filtros SVG de ruido y desplazamiento simulan la irregularidad de la tinta.</p>
